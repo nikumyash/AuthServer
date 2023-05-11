@@ -1,7 +1,5 @@
 const Joi = require('joi');
 
-
-
 module.exports.registerValidation = (data)=>{
     const schema = Joi.object({
         name : Joi.string().min(4).required(),
